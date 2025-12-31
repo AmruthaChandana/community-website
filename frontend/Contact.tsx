@@ -22,7 +22,7 @@ const Contact: React.FC = () => {
 
     try {
       // Connect to the backend route we created
-      const res = await fetch('http://localhost:5000/api/contact', {
+      const res = await fetch('https://YOUR-RENDER-APP-NAME.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
